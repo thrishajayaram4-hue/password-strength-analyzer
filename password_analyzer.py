@@ -34,6 +34,10 @@ print("Lowercase:",has_lowercase)
 print("uppercase:",has_uppercase)
 print("Number:",has_number)
 print("Special character:",has_special)
+if score < 5:
+  print("Suggestion: Use at least 8 characters with uppercase,lowercase,a number,and a special character")
+else:
+  print("Your password meets all the basic strength requirements")
 
 
 
