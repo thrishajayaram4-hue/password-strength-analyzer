@@ -42,6 +42,8 @@ else:
   print("Your password meets all the basic strength requirements")
 has_unique_chars = len(set(password)) == len(password)
 print("Unique characters:",has_unique_chars)
+characters = string.ascii_letters + string.digits + string.punctuation suggested password = ''.join(secrets.choice(characters) for_in range(12))
+print("Suggested stronger password:",suggested_password)
 
 
 
