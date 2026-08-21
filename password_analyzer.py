@@ -38,6 +38,8 @@ if score < 5:
   print("Suggestion: Use at least 8 characters with uppercase,lowercase,a number,and a special character")
 else:
   print("Your password meets all the basic strength requirements")
+has_unique_chars = len(set(password)) == len(password)
+print("Unique characters:",has_unique_chars)
 
 
 
