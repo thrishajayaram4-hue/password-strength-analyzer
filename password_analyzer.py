@@ -24,7 +24,7 @@ if has_number:
   score += 1
 if has_special:
   score += 1
-if score <=2:
+if score <=2 or not has_unique_chars:
   print("Password strength: Weak")
 elif score <= 4:
   print("Password strength: Medium")
@@ -42,9 +42,9 @@ else:
   print("Your password meets all the basic strength requirements")
 has_unique_chars = len(set(password)) == len(password)
 print("Unique characters:",has_unique_chars)
-characters = string.ascii_letters + string.digits + string.punctuation suggested password = ''.join(secrets.choice(characters) for_in range(12))
+characters = string.ascii_letters + string.digits + string.punctuation
+suggested_password = ''.join(secrets.choice(characters) for _ in range(12))
 print("Suggested stronger password:",suggested_password)
-
 
 
 
