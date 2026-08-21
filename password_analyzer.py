@@ -11,6 +11,25 @@ has_number = any(char.isdigit() for char in password)
 print("Contains number:",has_number)
 has_special = any(not char.isalnum() for char in password)
 print("Contains special character:",has_special)
+score = 0
+if length >= 8:
+  score += 1
+if has_lowercase:
+  score += 1
+if has_uppercase:
+  score += 1
+if has_number:
+  score += 1
+if has_special:
+  score += 1
+if score <=2:
+  print("Password strength: Weak")
+elif score <= 4:
+  print("Password strength: Medium")
+else:
+  print("Password strength: Strong")
+
+
 
 
 
