@@ -28,6 +28,12 @@ elif score <= 4:
   print("Password strength: Medium")
 else:
   print("Password strength: Strong")
+print("\nSecurity checks:")
+print("Length 8+:",length>=8)
+print("Lowercase:",has_lowercase)
+print("uppercase:",has_uppercase)
+print("Number:",has_number)
+print("Special character:",has_special)
 
 
 
