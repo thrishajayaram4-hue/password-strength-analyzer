@@ -3,3 +3,5 @@ print("Password entered successfully!")
 
 length = len(password)
 print("Password length:",length)
+has_uppercase = any(char.isupper() for char in password)
+print("Contains uppercase:",has_uppercase)
