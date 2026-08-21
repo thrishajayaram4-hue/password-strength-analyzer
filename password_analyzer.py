@@ -24,6 +24,7 @@ if has_number:
   score += 1
 if has_special:
   score += 1
+has_unique_chars = len(set(password)) == len(password)  
 if score <=2 or not has_unique_chars:
   print("Password strength: Weak")
 elif score <= 4:
